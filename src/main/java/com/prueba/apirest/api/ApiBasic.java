@@ -17,6 +17,10 @@ public class ApiBasic {
         return "hello spring boot";
     }
 
+    @PostMapping("hello")
+    public String helloPost(@RequestBody String name){
+        return "hola "+name+ " tu nombre es capturado por post";
+    }
 
 
 
